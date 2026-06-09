@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <head>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-K39XV9F5S7"
+          src="https://www.googletagmanager.com/gtag/js?id=G-M1167D9DNP"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -28,9 +28,11 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);} 
             gtag('js', new Date());
-            gtag('config', 'G-K39XV9F5S7');
+            gtag('config', 'G-M1167D9DNP');
           `}
         </Script>
+      </head>
+      <body className={font.className}>        
         <AppShell>{children}</AppShell>
       </body>
     </html>
